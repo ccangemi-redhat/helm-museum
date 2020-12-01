@@ -23,4 +23,4 @@ appVersion: 1.16.0
 dependencies:
 - name: test-helm-dep
   version: 0.1.0
-  repository: "git+https://github.com/ccangemi-redhat/helm-museum.git@?ref=masters"
+  repository: "git+https://github.com/ccangemi-redhat/helm-museum.git@?ref=master"
