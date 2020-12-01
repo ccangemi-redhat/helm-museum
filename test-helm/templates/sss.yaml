@@ -6,7 +6,8 @@ metadata:
   namespace: default
   resourceVersion: "516"
   uid: b4952dc3-d670-11e5-8cd0-68f728db1985
+{{ include "test-helm-dep.test" . | indent 2}}
 data:
   game.properties: |-
-    {{- $temp := "files/text.txt" -}}
-    {{ .Files.Get $temp  | indent 4 }}
+{{- $file := print "files/server-" .Values.ENV ".env"}}
+{{ .Files.Get $file | indent 4 }}
