@@ -1,0 +1,9 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: "helm-test"
+  annotations:
+    "helm.sh/resource-policy": keep
+spec:
+  finalizers:
+    - kubernetes
